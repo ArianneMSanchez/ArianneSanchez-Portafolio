@@ -1,0 +1,40 @@
+terraform {
+  required_providers {
+    azurerm = {
+      source  = "hashicorp/azurerm"
+      version = "~> 3.0"
+    }
+  }
+}
+
+provider "azurerm" {
+  features {}
+}
+
+resource "azurerm_resource_group" "rg" {
+  name     = "static-website-rg"
+  location = "West Europe" # Cambia a tu región preferida
+}
+
+resource "azurerm_storage_account" "sa" {
+  name                     = "staticwebsite${random_integer.value}"
+  resource_group_name      = azurerm_resource_group.rg.name
+  location                 = azurerm_resource_group.rg.location
+  account_tier             = "Standard"
+  account_replication_type = "LRS"
+  account_kind             = "StorageV2"
+
+  static_website {
+    index_document = "index.html"
+    error_404_document = "404.html"
+  }
+}
+
+resource "random_integer" "value" {
+  min = 10000
+  max = 99999
+}
+
+output "primary_web_endpoint" {
+  value = azurerm_storage_account.sa.primary_web_endpoint
+}
