@@ -5,9 +5,9 @@
 
 ## Certificaciones
 
-* Azure AZ-900: Fundamentos de Azure
-* Azure AZ-104: Administrador de Azure
-* Azure AZ-305: Arquitecto de Soluciones de Azure
+* Azure AZ-900: Azure Fundamentals
+* Azure AZ-104: Azure Administrator
+* Azure AZ-305: Azure Solutions Architect
 * AWS Cloud Practitioner
 
 ## Proyectos
