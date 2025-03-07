@@ -1,7 +1,7 @@
 # ArianneSanchez-Portafolio
 # Mi Portafolio de Cloud Computing y Ciberseguridad
 
-¡Bienvenido a mi portafolio de proyectos! Aquí encontrarás ejemplos de mi trabajo en Cloud Computing y Ciberseguridad, demostrando mis habilidades y certificaciones en Azure y AWS.
+Bienvenido a mi repositorio de plantillas Terraform para Cloud Computing. Aquí encontrarás ejemplos de código para automatizar la creación de infraestructuras seguras, escalables y alineadas con los Well-Architected Frameworks de Azure y AWS. Demuestro mis habilidades y certificaciones a través de la implementación de Infraestructura como Código (IaC).
 
 ## Certificaciones
 
